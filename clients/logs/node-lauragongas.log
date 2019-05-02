@@ -1,0 +1,31 @@
+[INFO ] 2019-05-02T13:19:54,426 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Tue Apr 30 17:23:27 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-02T13:19:57,306 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2019-05-02T13:19:57,572 [Thread-3 (ActiveMQ-client-global-threads)] client - AMQ212004: Failed to connect to server.
+[ERROR] 2019-05-02T13:19:57,590 [Thread-3 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Could not reconnect to the RPC server.
+[ERROR] 2019-05-02T13:19:57,644 [Thread-3 (ActiveMQ-client-global-threads)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:764) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:432) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:112) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1010) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:610) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:465) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.close(DefaultChannelPipeline.java:1003) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel.close(AbstractChannel.java:238) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.closeChannel(NettyConnection.java:558) ~[artemis-core-client-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.close(NettyConnection.java:240) ~[artemis-core-client-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.internalClose(RemotingConnectionImpl.java:417) ~[artemis-core-client-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.fail(RemotingConnectionImpl.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.spi.core.protocol.AbstractRemotingConnection.fail(AbstractRemotingConnection.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl$CloseRunnable.run(ClientSessionFactoryImpl.java:1000) ~[artemis-core-client-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:42) ~[artemis-commons-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:31) ~[artemis-commons-2.6.2.jar:2.6.2]
+	at org.apache.activemq.artemis.utils.actors.ProcessorBase.executePendingTasks(ProcessorBase.java:66) ~[artemis-commons-2.6.2.jar:2.6.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.2.jar:2.6.2]
