@@ -18,12 +18,12 @@ import java.util.Currency;
 public class IssueFlow extends FlowLogic<AbstractCashFlow.Result> {
 
     private Amount<Currency> amount;
-    private Party recipient;
+    //private Party recipient;
 
 
-    public IssueFlow(Amount<Currency> amount, Party recipient) {
+    public IssueFlow(Amount<Currency> amount) {
         this.amount = amount;
-        this.recipient = recipient;
+        //this.recipient = recipient;
     }
 
     @Override
@@ -34,9 +34,10 @@ public class IssueFlow extends FlowLogic<AbstractCashFlow.Result> {
         OpaqueBytes issueRef = OpaqueBytes.of((byte) 0);
         Boolean anonymous = false;
 
-        //AbstractCashFlow.Result result = subFlow(new CashIssueFlow(amount, issueRef, notary));
 
-        AbstractCashFlow.Result result = subFlow(new CashIssueAndPaymentFlow(amount, issueRef, recipient, anonymous, notary));
+        AbstractCashFlow.Result result = subFlow(new CashIssueFlow(amount, issueRef, notary));
+
+        //AbstractCashFlow.Result result = subFlow(new CashIssueAndPaymentFlow(amount, issueRef, recipient, anonymous, notary));
 
         return result;
 
