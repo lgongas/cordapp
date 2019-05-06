@@ -1,82 +1,275 @@
-[INFO ] 2019-05-03T15:01:56,702 [main] Starter - Starting Starter on lauragongas with PID 69656 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
-[INFO ] 2019-05-03T15:01:56,754 [main] Starter - No active profile set, falling back to default profiles: default
-[INFO ] 2019-05-03T15:01:56,922 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:01:56 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:01:59,858 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
-[INFO ] 2019-05-03T15:01:59,899 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T15:01:59,932 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2019-05-03T15:01:59,933 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
-[INFO ] 2019-05-03T15:01:59,958 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-[INFO ] 2019-05-03T15:02:00,200 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2019-05-03T15:02:00,203 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3287 ms
-[INFO ] 2019-05-03T15:02:00,595 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-[INFO ] 2019-05-03T15:02:00,616 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2019-05-03T15:02:00,628 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2019-05-03T15:02:00,630 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2019-05-03T15:02:00,630 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2019-05-03T15:02:04,168 [main] RPCClient - Startup took 3111 msec
-[INFO ] 2019-05-03T15:02:04,390 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:02:04,978 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:01:56 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:02:05,205 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
-[INFO ] 2019-05-03T15:02:05,207 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
-[INFO ] 2019-05-03T15:02:05,208 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
-[INFO ] 2019-05-03T15:02:05,210 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
-[INFO ] 2019-05-03T15:02:05,218 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2019-05-03T15:02:05,221 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2019-05-03T15:02:05,296 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:02:05,298 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:02:05,434 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-[INFO ] 2019-05-03T15:02:05,795 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2019-05-03T15:02:05,831 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T15:02:05,871 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2019-05-03T15:02:05,981 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
-[INFO ] 2019-05-03T15:02:05,992 [main] Starter - Started Starter in 12.415 seconds (JVM running for 15.119)
-[INFO ] 2019-05-03T15:02:22,231 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2019-05-03T15:02:22,238 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2019-05-03T15:02:22,473 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 234 ms
-[ERROR] 2019-05-03T15:02:36,116 [http-nio-10050-exec-3] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type com.loken.flows.IssueFlow: due to missing constructor for arguments: [class java.lang.Integer]] with root cause
-net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type com.loken.flows.IssueFlow: due to missing constructor for arguments: [class java.lang.Integer]
-[WARN ] 2019-05-03T15:21:48,593 [Thread-3 (ActiveMQ-client-global-threads)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
-[WARN ] 2019-05-03T15:21:48,987 [Thread-3 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Terminating observables.
-[INFO ] 2019-05-03T15:25:19,324 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:01:56 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:25:20,288 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[WARN ] 2019-05-03T15:25:20,561 [Thread-3 (ActiveMQ-client-global-threads)] client - AMQ212004: Failed to connect to server.
-[ERROR] 2019-05-03T15:25:20,566 [Thread-3 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Could not reconnect to the RPC server.
-[WARN ] 2019-05-03T15:25:20,613 [Thread-4] client - AMQ212051: Invalid concurrent session usage. Sessions are not supposed to be used by more than one thread concurrently.
-java.lang.Exception: trace
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.startCall(ClientSessionImpl.java:1457) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.acknowledge(ClientSessionImpl.java:1101) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.doAck(ClientConsumerImpl.java:1106) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.flushAcks(ClientConsumerImpl.java:790) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.doCleanUp(ClientConsumerImpl.java:1079) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.close(ClientConsumerImpl.java:443) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.closeChildren(ClientSessionImpl.java:2018) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.close(ClientSessionImpl.java:1228) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl.closeCleanSessions(ClientSessionFactoryImpl.java:446) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl.interruptConnectAndCloseAllSessions(ClientSessionFactoryImpl.java:428) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl.close(ClientSessionFactoryImpl.java:461) [artemis-core-client-2.6.2.jar:2.6.2]
-	at net.corda.client.rpc.internal.RPCClientProxyHandler.close(RPCClientProxyHandler.kt:403) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.internal.RPCClientProxyHandler.notifyServerAndClose(RPCClientProxyHandler.kt:384) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.internal.RPCClient$start$1$1.close(RPCClient.kt:109) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.internal.RPCClient$start$1$1.notifyServerAndClose(RPCClient.kt:117) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.CordaRPCConnection.notifyServerAndClose(CordaRPCClient.kt) [corda-rpc-4.0.jar:?]
-	at com.template.webserver.NodeRPCConnection.close(NodeRPCConnection.java:46) [main/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_202]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_202]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:365) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:323) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:155) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:577) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:549) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:957) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:510) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:964) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-[ERROR] 2019-05-03T15:25:50,841 [Thread-3 (ActiveMQ-client-global-threads)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+[INFO ] 2019-05-06T13:40:03,679 [main] Starter - Starting Starter on lauragongas with PID 82385 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T13:40:03,715 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T13:40:03,838 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 08:40:03 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T13:40:07,030 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T13:40:07,074 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T13:40:07,098 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T13:40:07,099 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T13:40:07,116 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T13:40:07,377 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T13:40:07,378 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3546 ms
+[INFO ] 2019-05-06T13:40:07,724 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T13:40:07,736 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T13:40:07,737 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T13:40:07,738 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T13:40:07,740 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T13:40:10,829 [main] RPCClient - Startup took 2685 msec
+[INFO ] 2019-05-06T13:40:11,035 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T13:40:11,562 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 08:40:03 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T13:40:11,770 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T13:40:11,772 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T13:40:11,773 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T13:40:11,775 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
+[INFO ] 2019-05-06T13:40:11,787 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T13:40:11,788 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T13:40:11,859 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T13:40:11,859 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T13:40:12,001 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T13:40:12,336 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T13:40:12,366 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T13:40:12,407 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T13:40:12,440 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T13:40:12,448 [main] Starter - Started Starter in 11.826 seconds (JVM running for 13.831)
+[INFO ] 2019-05-06T13:40:39,395 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-05-06T13:40:39,397 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-05-06T13:40:39,477 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 75 ms
+[INFO ] 2019-05-06T14:11:19,419 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 08:40:03 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T14:11:20,451 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2019-05-06T14:11:30,057 [Thread-11 (ActiveMQ-client-global-threads)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
+[INFO ] 2019-05-06T14:16:37,346 [main] Starter - Starting Starter on lauragongas with PID 83275 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T14:16:37,363 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T14:16:37,515 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 09:16:37 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T14:16:40,723 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T14:16:40,781 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T14:16:40,814 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T14:16:40,819 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T14:16:40,853 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T14:16:41,109 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T14:16:41,110 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3604 ms
+[INFO ] 2019-05-06T14:16:41,468 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T14:16:41,476 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T14:16:41,478 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T14:16:41,479 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T14:16:41,480 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T14:16:45,634 [main] RPCClient - Startup took 3705 msec
+[INFO ] 2019-05-06T14:16:45,973 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T14:16:46,917 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 09:16:37 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T14:16:47,220 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T14:16:47,224 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T14:16:47,226 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
+[INFO ] 2019-05-06T14:16:47,230 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T14:16:47,232 [main] RequestMappingHandlerMapping - Mapped "{[/issue_request],methods=[POST]}" onto public void com.template.webserver.Controller.issue_request(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T14:16:47,245 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T14:16:47,246 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T14:16:47,311 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T14:16:47,315 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T14:16:47,536 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T14:16:48,102 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T14:16:48,158 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T14:16:48,227 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T14:16:48,300 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T14:16:48,324 [main] Starter - Started Starter in 14.835 seconds (JVM running for 17.607)
+[INFO ] 2019-05-06T14:17:02,363 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-05-06T14:17:02,371 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-05-06T14:17:02,668 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 293 ms
+[WARN ] 2019-05-06T14:25:01,218 [http-nio-10050-exec-7] PageNotFound - Request method 'GET' not supported
+[INFO ] 2019-05-06T14:27:52,240 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 09:16:37 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T14:27:52,394 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2019-05-06T14:32:49,879 [main] Starter - Starting Starter on lauragongas with PID 83961 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T14:32:49,893 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T14:32:50,039 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 09:32:50 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T14:32:52,825 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T14:32:52,864 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T14:32:52,894 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T14:32:52,895 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T14:32:52,920 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T14:32:53,172 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T14:32:53,173 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3142 ms
+[INFO ] 2019-05-06T14:32:53,458 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T14:32:53,466 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T14:32:53,466 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T14:32:53,467 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T14:32:53,467 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T14:32:56,765 [main] RPCClient - Startup took 2901 msec
+[INFO ] 2019-05-06T14:32:56,985 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T14:32:57,538 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 09:32:50 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T14:32:57,745 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T14:32:57,749 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T14:32:57,752 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
+[INFO ] 2019-05-06T14:32:57,754 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T14:32:57,756 [main] RequestMappingHandlerMapping - Mapped "{[/issue_request],methods=[POST]}" onto public void com.template.webserver.Controller.issue_request(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T14:32:57,763 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T14:32:57,764 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T14:32:57,827 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T14:32:57,828 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T14:32:57,945 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T14:32:58,275 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T14:32:58,308 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T14:32:58,349 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T14:32:58,385 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T14:32:58,396 [main] Starter - Started Starter in 11.397 seconds (JVM running for 13.393)
+[INFO ] 2019-05-06T14:33:36,304 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-05-06T14:33:36,306 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-05-06T14:33:36,333 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+[INFO ] 2019-05-06T14:37:24,947 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 09:32:50 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T14:37:25,022 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2019-05-06T15:23:32,498 [main] Starter - Starting Starter on lauragongas with PID 1554 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T15:23:32,507 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T15:23:32,588 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 10:23:32 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:23:34,692 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T15:23:34,719 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T15:23:34,737 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T15:23:34,738 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T15:23:34,754 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T15:23:34,940 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T15:23:34,941 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2358 ms
+[INFO ] 2019-05-06T15:23:35,132 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T15:23:35,137 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T15:23:35,138 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T15:23:35,138 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T15:23:35,138 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T15:23:37,706 [main] RPCClient - Startup took 2289 msec
+[INFO ] 2019-05-06T15:23:37,880 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:23:38,348 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 10:23:32 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:23:38,517 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T15:23:38,521 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T15:23:38,524 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T15:23:38,526 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T15:23:38,531 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T15:23:38,535 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T15:23:38,589 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:23:38,591 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:23:38,700 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T15:23:38,936 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T15:23:38,961 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T15:23:38,987 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T15:23:39,018 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T15:23:39,026 [main] Starter - Started Starter in 8.744 seconds (JVM running for 10.242)
+[INFO ] 2019-05-06T15:37:18,251 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 10:23:32 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:37:18,265 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2019-05-06T15:46:40,557 [main] Starter - Starting Starter on lauragongas with PID 2302 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T15:46:40,568 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T15:46:40,656 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Mon May 06 10:46:40 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:46:42,718 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T15:46:42,743 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T15:46:42,763 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T15:46:42,764 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T15:46:42,779 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T15:46:42,951 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T15:46:42,952 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2302 ms
+[INFO ] 2019-05-06T15:46:43,166 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T15:46:43,173 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T15:46:43,174 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T15:46:43,174 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T15:46:43,175 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T15:46:45,583 [main] RPCClient - Startup took 2110 msec
+[INFO ] 2019-05-06T15:46:45,733 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:46:46,108 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Mon May 06 10:46:40 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:46:46,256 [main] RequestMappingHandlerMapping - Mapped "{[/transfer],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.transfer(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T15:46:46,259 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T15:46:46,261 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T15:46:46,263 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T15:46:46,265 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T15:46:46,269 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T15:46:46,270 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T15:46:46,317 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:46:46,318 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:46:46,403 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T15:46:46,640 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T15:46:46,668 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T15:46:46,694 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T15:46:46,724 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T15:46:46,731 [main] Starter - Started Starter in 8.404 seconds (JVM running for 9.78)
+[INFO ] 2019-05-06T15:47:02,367 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-05-06T15:47:02,372 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-05-06T15:47:02,454 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 76 ms
+[WARN ] 2019-05-06T15:47:02,640 [http-nio-10050-exec-1] PageNotFound - Request method 'GET' not supported
+[INFO ] 2019-05-06T15:52:42,579 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Mon May 06 10:46:40 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:52:42,600 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2019-05-06T15:59:42,543 [main] Starter - Starting Starter on lauragongas with PID 2942 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T15:59:42,553 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T15:59:42,644 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 10:59:42 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:59:44,699 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T15:59:44,726 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T15:59:44,743 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T15:59:44,745 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T15:59:44,761 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T15:59:44,915 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T15:59:44,915 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2275 ms
+[INFO ] 2019-05-06T15:59:45,143 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T15:59:45,151 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T15:59:45,152 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T15:59:45,153 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T15:59:45,153 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T15:59:47,676 [main] RPCClient - Startup took 2218 msec
+[INFO ] 2019-05-06T15:59:47,825 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:59:48,167 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 10:59:42 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T15:59:48,298 [main] RequestMappingHandlerMapping - Mapped "{[/transfer],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.transfer(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T15:59:48,302 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T15:59:48,303 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T15:59:48,304 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T15:59:48,305 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T15:59:48,312 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T15:59:48,313 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T15:59:48,354 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:59:48,355 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T15:59:48,441 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T15:59:48,650 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T15:59:48,675 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T15:59:48,702 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T15:59:48,729 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T15:59:48,736 [main] Starter - Started Starter in 8.366 seconds (JVM running for 9.75)
+[INFO ] 2019-05-06T16:01:12,446 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-05-06T16:01:12,448 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-05-06T16:01:12,482 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+[WARN ] 2019-05-06T16:01:22,787 [http-nio-10050-exec-2] PageNotFound - Request method 'POST' not supported
+[ERROR] 2019-05-06T16:01:54,720 [http-nio-10050-exec-4] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type com.loken.flows.TransferFlow: due to missing constructor for arguments: [class java.lang.String, class net.corda.core.contracts.Amount]] with root cause
+net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type com.loken.flows.TransferFlow: due to missing constructor for arguments: [class java.lang.String, class net.corda.core.contracts.Amount]
+[INFO ] 2019-05-06T16:13:13,869 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 10:59:42 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T16:13:13,899 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2019-05-06T16:17:23,333 [main] Starter - Starting Starter on lauragongas with PID 3610 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T16:17:23,342 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T16:17:23,428 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 11:17:23 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T16:17:25,565 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T16:17:25,590 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T16:17:25,607 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T16:17:25,609 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T16:17:25,628 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T16:17:25,787 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T16:17:25,787 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2364 ms
+[INFO ] 2019-05-06T16:17:25,976 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T16:17:25,983 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T16:17:25,984 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T16:17:25,984 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T16:17:25,985 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T16:17:28,348 [main] RPCClient - Startup took 2065 msec
+[INFO ] 2019-05-06T16:17:28,477 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T16:17:28,816 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 11:17:23 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T16:17:28,960 [main] RequestMappingHandlerMapping - Mapped "{[/transfer],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.transfer(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T16:17:28,963 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T16:17:28,964 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T16:17:28,964 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T16:17:28,965 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T16:17:28,970 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T16:17:28,971 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T16:17:29,012 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T16:17:29,012 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T16:17:29,095 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T16:17:29,328 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T16:17:29,353 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T16:17:29,380 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T16:17:29,405 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T16:17:29,412 [main] Starter - Started Starter in 8.276 seconds (JVM running for 9.702)
+[INFO ] 2019-05-06T16:17:50,794 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-05-06T16:17:50,794 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-05-06T16:17:50,821 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+[WARN ] 2019-05-06T16:32:14,088 [Thread-5 (ActiveMQ-client-global-threads)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
+[WARN ] 2019-05-06T16:32:14,108 [Thread-5 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Terminating observables.
+[INFO ] 2019-05-06T16:33:08,223 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 11:17:23 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T16:33:08,510 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[WARN ] 2019-05-06T16:33:08,574 [Thread-5 (ActiveMQ-client-global-threads)] client - AMQ212004: Failed to connect to server.
+[ERROR] 2019-05-06T16:33:08,576 [Thread-5 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Could not reconnect to the RPC server.
+[ERROR] 2019-05-06T16:33:38,903 [Thread-5 (ActiveMQ-client-global-threads)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
 java.util.concurrent.RejectedExecutionException: event executor terminated
 	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
 	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
@@ -103,362 +296,57 @@ java.util.concurrent.RejectedExecutionException: event executor terminated
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
 	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.2.jar:2.6.2]
-[INFO ] 2019-05-03T15:28:54,011 [main] Starter - Starting Starter on lauragongas with PID 70954 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
-[INFO ] 2019-05-03T15:28:54,034 [main] Starter - No active profile set, falling back to default profiles: default
-[INFO ] 2019-05-03T15:28:54,201 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:28:54 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:28:57,280 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
-[INFO ] 2019-05-03T15:28:57,316 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T15:28:57,366 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2019-05-03T15:28:57,368 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
-[INFO ] 2019-05-03T15:28:57,387 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-[INFO ] 2019-05-03T15:28:57,625 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2019-05-03T15:28:57,626 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3429 ms
-[INFO ] 2019-05-03T15:28:57,922 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-[INFO ] 2019-05-03T15:28:57,943 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2019-05-03T15:28:57,945 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2019-05-03T15:28:57,946 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2019-05-03T15:28:57,947 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2019-05-03T15:29:01,235 [main] RPCClient - Startup took 2933 msec
-[INFO ] 2019-05-03T15:29:01,452 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:29:01,993 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:28:54 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:29:02,187 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
-[INFO ] 2019-05-03T15:29:02,189 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
-[INFO ] 2019-05-03T15:29:02,191 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
-[INFO ] 2019-05-03T15:29:02,192 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
-[INFO ] 2019-05-03T15:29:02,198 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2019-05-03T15:29:02,199 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2019-05-03T15:29:02,275 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:29:02,275 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:29:02,396 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-[INFO ] 2019-05-03T15:29:02,720 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2019-05-03T15:29:02,759 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T15:29:02,789 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2019-05-03T15:29:02,839 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
-[INFO ] 2019-05-03T15:29:02,849 [main] Starter - Started Starter in 12.276 seconds (JVM running for 14.337)
-[INFO ] 2019-05-03T15:29:14,099 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2019-05-03T15:29:14,100 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2019-05-03T15:29:14,201 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 101 ms
-[ERROR] 2019-05-03T15:29:16,123 [http-nio-10050-exec-1] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type com.loken.flows.IssueFlow: due to missing constructor for arguments: [class java.lang.String]] with root cause
-net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type com.loken.flows.IssueFlow: due to missing constructor for arguments: [class java.lang.String]
-[WARN ] 2019-05-03T15:40:56,641 [Thread-3 (ActiveMQ-client-global-threads)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
-[WARN ] 2019-05-03T15:40:56,759 [Thread-3 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Terminating observables.
-[INFO ] 2019-05-03T15:42:34,958 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:28:54 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:42:35,225 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[WARN ] 2019-05-03T15:42:35,301 [Thread-3 (ActiveMQ-client-global-threads)] client - AMQ212004: Failed to connect to server.
-[ERROR] 2019-05-03T15:42:35,302 [Thread-3 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Could not reconnect to the RPC server.
-[ERROR] 2019-05-03T15:43:05,406 [Thread-3 (ActiveMQ-client-global-threads)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
-java.util.concurrent.RejectedExecutionException: event executor terminated
-	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:764) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:432) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:112) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1010) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:610) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:465) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.DefaultChannelPipeline.close(DefaultChannelPipeline.java:1003) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannel.close(AbstractChannel.java:238) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.closeChannel(NettyConnection.java:558) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.close(NettyConnection.java:240) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.internalClose(RemotingConnectionImpl.java:417) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.fail(RemotingConnectionImpl.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.spi.core.protocol.AbstractRemotingConnection.fail(AbstractRemotingConnection.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl$CloseRunnable.run(ClientSessionFactoryImpl.java:1000) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:42) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:31) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.ProcessorBase.executePendingTasks(ProcessorBase.java:66) ~[artemis-commons-2.6.2.jar:2.6.2]
+[INFO ] 2019-05-06T16:40:57,478 [main] Starter - Starting Starter on lauragongas with PID 5054 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
+[INFO ] 2019-05-06T16:40:57,488 [main] Starter - No active profile set, falling back to default profiles: default
+[INFO ] 2019-05-06T16:40:57,602 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 11:40:57 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T16:40:59,427 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
+[INFO ] 2019-05-06T16:40:59,451 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T16:40:59,466 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2019-05-06T16:40:59,467 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2019-05-06T16:40:59,481 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2019-05-06T16:40:59,662 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-05-06T16:40:59,662 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 2072 ms
+[INFO ] 2019-05-06T16:40:59,849 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2019-05-06T16:40:59,856 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-05-06T16:40:59,857 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-05-06T16:40:59,858 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-05-06T16:40:59,859 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-05-06T16:41:02,238 [main] RPCClient - Startup took 2112 msec
+[INFO ] 2019-05-06T16:41:02,388 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T16:41:02,716 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 11:40:57 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T16:41:02,843 [main] RequestMappingHandlerMapping - Mapped "{[/transfer],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.transfer(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T16:41:02,846 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
+[INFO ] 2019-05-06T16:41:02,847 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
+[INFO ] 2019-05-06T16:41:02,847 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
+[INFO ] 2019-05-06T16:41:02,848 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[POST]}" onto public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T16:41:02,852 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-05-06T16:41:02,853 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-05-06T16:41:02,908 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T16:41:02,908 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-05-06T16:41:02,997 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[INFO ] 2019-05-06T16:41:03,231 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-05-06T16:41:03,256 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
+[INFO ] 2019-05-06T16:41:03,282 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-05-06T16:41:03,314 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
+[INFO ] 2019-05-06T16:41:03,322 [main] Starter - Started Starter in 7.931 seconds (JVM running for 9.301)
+[INFO ] 2019-05-06T16:41:31,960 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-05-06T16:41:31,961 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-05-06T16:41:31,986 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+[WARN ] 2019-05-06T16:41:51,036 [http-nio-10050-exec-2] DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[WARN ] 2019-05-06T16:43:11,094 [http-nio-10050-exec-8] DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T16:46:00,281 [http-nio-10050-exec-5] Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:687) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
-	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.2.jar:2.6.2]
-[INFO ] 2019-05-03T15:45:57,973 [main] Starter - Starting Starter on lauragongas with PID 71923 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
-[INFO ] 2019-05-03T15:45:57,993 [main] Starter - No active profile set, falling back to default profiles: default
-[INFO ] 2019-05-03T15:45:58,136 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:45:58 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:46:01,032 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
-[INFO ] 2019-05-03T15:46:01,075 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T15:46:01,104 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2019-05-03T15:46:01,106 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
-[INFO ] 2019-05-03T15:46:01,135 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-[INFO ] 2019-05-03T15:46:01,358 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2019-05-03T15:46:01,359 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3229 ms
-[INFO ] 2019-05-03T15:46:01,646 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-[INFO ] 2019-05-03T15:46:01,653 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2019-05-03T15:46:01,655 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2019-05-03T15:46:01,655 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2019-05-03T15:46:01,656 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2019-05-03T15:46:04,678 [main] RPCClient - Startup took 2646 msec
-[INFO ] 2019-05-03T15:46:04,879 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:46:05,376 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:45:58 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:46:05,577 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
-[INFO ] 2019-05-03T15:46:05,579 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
-[INFO ] 2019-05-03T15:46:05,580 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
-[INFO ] 2019-05-03T15:46:05,581 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
-[INFO ] 2019-05-03T15:46:05,591 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2019-05-03T15:46:05,592 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2019-05-03T15:46:05,659 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:46:05,659 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T15:46:05,784 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-[INFO ] 2019-05-03T15:46:06,180 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2019-05-03T15:46:06,229 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T15:46:06,264 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2019-05-03T15:46:06,308 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
-[INFO ] 2019-05-03T15:46:06,318 [main] Starter - Started Starter in 11.468 seconds (JVM running for 13.476)
-[INFO ] 2019-05-03T15:46:27,880 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2019-05-03T15:46:27,882 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2019-05-03T15:46:27,977 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 93 ms
-[ERROR] 2019-05-03T15:46:36,765 [http-nio-10050-exec-2] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type net.corda.finance.flows.CashIssueFlow: due to missing constructor for arguments: [class java.lang.String, class net.corda.core.utilities.OpaqueBytes, class net.corda.core.identity.Party]] with root cause
-net.corda.core.CordaRuntimeException: net.corda.core.flows.IllegalFlowLogicException: A FlowLogicRef cannot be constructed for FlowLogic of type net.corda.finance.flows.CashIssueFlow: due to missing constructor for arguments: [class java.lang.String, class net.corda.core.utilities.OpaqueBytes, class net.corda.core.identity.Party]
-[WARN ] 2019-05-03T15:54:46,470 [Thread-4 (ActiveMQ-client-global-threads)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
-[WARN ] 2019-05-03T15:54:46,770 [Thread-4 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Terminating observables.
-[INFO ] 2019-05-03T15:56:22,704 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 10:45:58 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T15:56:23,096 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[WARN ] 2019-05-03T15:56:23,177 [Thread-4 (ActiveMQ-client-global-threads)] client - AMQ212004: Failed to connect to server.
-[ERROR] 2019-05-03T15:56:23,179 [Thread-4 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Could not reconnect to the RPC server.
-[ERROR] 2019-05-03T15:56:53,279 [Thread-4 (ActiveMQ-client-global-threads)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
-java.util.concurrent.RejectedExecutionException: event executor terminated
-	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:764) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:432) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:112) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1010) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:610) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:465) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.DefaultChannelPipeline.close(DefaultChannelPipeline.java:1003) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannel.close(AbstractChannel.java:238) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.closeChannel(NettyConnection.java:558) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.close(NettyConnection.java:240) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.internalClose(RemotingConnectionImpl.java:417) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.fail(RemotingConnectionImpl.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.spi.core.protocol.AbstractRemotingConnection.fail(AbstractRemotingConnection.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl$CloseRunnable.run(ClientSessionFactoryImpl.java:1000) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:42) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:31) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.ProcessorBase.executePendingTasks(ProcessorBase.java:66) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
-	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.2.jar:2.6.2]
-[INFO ] 2019-05-03T16:00:08,146 [main] Starter - Starting Starter on lauragongas with PID 72636 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
-[INFO ] 2019-05-03T16:00:08,157 [main] Starter - No active profile set, falling back to default profiles: default
-[INFO ] 2019-05-03T16:00:08,266 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 11:00:08 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:00:11,191 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
-[INFO ] 2019-05-03T16:00:11,247 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:00:11,277 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2019-05-03T16:00:11,279 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
-[INFO ] 2019-05-03T16:00:11,304 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-[INFO ] 2019-05-03T16:00:11,542 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2019-05-03T16:00:11,543 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3282 ms
-[INFO ] 2019-05-03T16:00:11,839 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-[INFO ] 2019-05-03T16:00:11,848 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2019-05-03T16:00:11,850 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2019-05-03T16:00:11,850 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2019-05-03T16:00:11,851 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2019-05-03T16:00:15,208 [main] RPCClient - Startup took 3004 msec
-[INFO ] 2019-05-03T16:00:15,388 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:00:15,941 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 11:00:08 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:00:16,133 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
-[INFO ] 2019-05-03T16:00:16,137 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
-[INFO ] 2019-05-03T16:00:16,138 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
-[INFO ] 2019-05-03T16:00:16,140 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
-[INFO ] 2019-05-03T16:00:16,150 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2019-05-03T16:00:16,152 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2019-05-03T16:00:16,227 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:00:16,227 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:00:16,344 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-[INFO ] 2019-05-03T16:00:16,731 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2019-05-03T16:00:16,782 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:00:16,823 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2019-05-03T16:00:16,892 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
-[INFO ] 2019-05-03T16:00:16,900 [main] Starter - Started Starter in 11.847 seconds (JVM running for 13.918)
-[INFO ] 2019-05-03T16:00:44,992 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2019-05-03T16:00:44,993 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2019-05-03T16:00:45,060 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
-[INFO ] 2019-05-03T16:04:03,981 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 11:00:08 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:04:04,028 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[INFO ] 2019-05-03T16:07:42,813 [main] Starter - Starting Starter on lauragongas with PID 73165 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
-[INFO ] 2019-05-03T16:07:42,831 [main] Starter - No active profile set, falling back to default profiles: default
-[INFO ] 2019-05-03T16:07:43,028 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 11:07:43 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:07:46,279 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
-[INFO ] 2019-05-03T16:07:46,327 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:07:46,358 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2019-05-03T16:07:46,360 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
-[INFO ] 2019-05-03T16:07:46,393 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-[INFO ] 2019-05-03T16:07:46,736 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2019-05-03T16:07:46,739 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3716 ms
-[INFO ] 2019-05-03T16:07:47,022 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-[INFO ] 2019-05-03T16:07:47,041 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2019-05-03T16:07:47,043 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2019-05-03T16:07:47,044 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2019-05-03T16:07:47,044 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2019-05-03T16:07:51,018 [main] RPCClient - Startup took 3457 msec
-[INFO ] 2019-05-03T16:07:51,252 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:07:51,805 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 11:07:43 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:07:52,041 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
-[INFO ] 2019-05-03T16:07:52,045 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
-[INFO ] 2019-05-03T16:07:52,046 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
-[INFO ] 2019-05-03T16:07:52,047 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
-[INFO ] 2019-05-03T16:07:52,060 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2019-05-03T16:07:52,062 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2019-05-03T16:07:52,145 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:07:52,146 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:07:52,282 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-[INFO ] 2019-05-03T16:07:52,732 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2019-05-03T16:07:52,768 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:07:52,801 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2019-05-03T16:07:52,851 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
-[INFO ] 2019-05-03T16:07:52,862 [main] Starter - Started Starter in 12.927 seconds (JVM running for 15.136)
-[INFO ] 2019-05-03T16:08:16,743 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2019-05-03T16:08:16,748 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2019-05-03T16:08:16,789 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
-[INFO ] 2019-05-03T16:12:47,020 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Fri May 03 11:07:43 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:12:47,096 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[INFO ] 2019-05-03T16:20:58,523 [main] Starter - Starting Starter on lauragongas with PID 73913 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
-[INFO ] 2019-05-03T16:20:58,533 [main] Starter - No active profile set, falling back to default profiles: default
-[INFO ] 2019-05-03T16:20:58,622 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Fri May 03 11:20:58 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:21:01,674 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
-[INFO ] 2019-05-03T16:21:01,713 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:21:01,738 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2019-05-03T16:21:01,739 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
-[INFO ] 2019-05-03T16:21:01,787 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-[INFO ] 2019-05-03T16:21:02,033 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2019-05-03T16:21:02,034 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 3419 ms
-[INFO ] 2019-05-03T16:21:02,340 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-[INFO ] 2019-05-03T16:21:02,349 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2019-05-03T16:21:02,350 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2019-05-03T16:21:02,351 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2019-05-03T16:21:02,354 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2019-05-03T16:21:05,619 [main] RPCClient - Startup took 2870 msec
-[INFO ] 2019-05-03T16:21:05,814 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:21:06,405 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Fri May 03 11:20:58 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:21:06,612 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
-[INFO ] 2019-05-03T16:21:06,614 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
-[INFO ] 2019-05-03T16:21:06,615 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
-[INFO ] 2019-05-03T16:21:06,616 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
-[INFO ] 2019-05-03T16:21:06,627 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2019-05-03T16:21:06,628 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2019-05-03T16:21:06,696 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:21:06,696 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:21:06,865 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-[INFO ] 2019-05-03T16:21:07,236 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2019-05-03T16:21:07,275 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:21:07,309 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2019-05-03T16:21:07,368 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
-[INFO ] 2019-05-03T16:21:07,377 [main] Starter - Started Starter in 12.043 seconds (JVM running for 14.066)
-[INFO ] 2019-05-03T16:22:07,296 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2019-05-03T16:22:07,298 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2019-05-03T16:22:07,373 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 74 ms
-[WARN ] 2019-05-03T16:47:01,734 [Thread-4 (ActiveMQ-client-global-threads)] client - AMQ212037: Connection failure has been detected: AMQ119015: The connection was disconnected because of server shutdown [code=DISCONNECTED]
-[WARN ] 2019-05-03T16:47:02,126 [Thread-4 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Terminating observables.
-[INFO ] 2019-05-03T16:51:23,899 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Fri May 03 11:20:58 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:51:24,997 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[WARN ] 2019-05-03T16:51:25,246 [Thread-4 (ActiveMQ-client-global-threads)] client - AMQ212004: Failed to connect to server.
-[ERROR] 2019-05-03T16:51:25,250 [Thread-4 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Could not reconnect to the RPC server.
-[WARN ] 2019-05-03T16:51:25,312 [Thread-4] client - AMQ212051: Invalid concurrent session usage. Sessions are not supposed to be used by more than one thread concurrently.
-java.lang.Exception: trace
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.startCall(ClientSessionImpl.java:1457) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.acknowledge(ClientSessionImpl.java:1101) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.doAck(ClientConsumerImpl.java:1106) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.flushAcks(ClientConsumerImpl.java:790) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.doCleanUp(ClientConsumerImpl.java:1079) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientConsumerImpl.close(ClientConsumerImpl.java:443) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.closeChildren(ClientSessionImpl.java:2018) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.close(ClientSessionImpl.java:1228) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl.closeCleanSessions(ClientSessionFactoryImpl.java:446) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl.interruptConnectAndCloseAllSessions(ClientSessionFactoryImpl.java:428) [artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl.close(ClientSessionFactoryImpl.java:461) [artemis-core-client-2.6.2.jar:2.6.2]
-	at net.corda.client.rpc.internal.RPCClientProxyHandler.close(RPCClientProxyHandler.kt:403) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.internal.RPCClientProxyHandler.notifyServerAndClose(RPCClientProxyHandler.kt:384) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.internal.RPCClient$start$1$1.close(RPCClient.kt:109) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.internal.RPCClient$start$1$1.notifyServerAndClose(RPCClient.kt:117) [corda-rpc-4.0.jar:?]
-	at net.corda.client.rpc.CordaRPCConnection.notifyServerAndClose(CordaRPCClient.kt) [corda-rpc-4.0.jar:?]
-	at com.template.webserver.NodeRPCConnection.close(NodeRPCConnection.java:46) [main/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_202]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_202]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:365) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:323) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:155) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:577) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:549) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:957) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:510) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:964) [spring-beans-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
-[ERROR] 2019-05-03T16:51:55,453 [Thread-4 (ActiveMQ-client-global-threads)] rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
-java.util.concurrent.RejectedExecutionException: event executor terminated
-	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:842) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:328) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:321) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:764) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:432) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:112) ~[netty-common-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:89) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1010) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:610) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:465) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.DefaultChannelPipeline.close(DefaultChannelPipeline.java:1003) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at io.netty.channel.AbstractChannel.close(AbstractChannel.java:238) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
-	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.closeChannel(NettyConnection.java:558) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection.close(NettyConnection.java:240) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.internalClose(RemotingConnectionImpl.java:417) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.protocol.core.impl.RemotingConnectionImpl.fail(RemotingConnectionImpl.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.spi.core.protocol.AbstractRemotingConnection.fail(AbstractRemotingConnection.java:218) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl$CloseRunnable.run(ClientSessionFactoryImpl.java:1000) ~[artemis-core-client-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:42) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.OrderedExecutor.doTask(OrderedExecutor.java:31) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at org.apache.activemq.artemis.utils.actors.ProcessorBase.executePendingTasks(ProcessorBase.java:66) ~[artemis-commons-2.6.2.jar:2.6.2]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_202]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_202]
-	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.2.jar:2.6.2]
-[INFO ] 2019-05-03T16:54:40,867 [main] Starter - Starting Starter on lauragongas with PID 75151 (/Users/lauragongas/cordapp/clients/build/classes/java/main started by lauragongas in /Users/lauragongas/cordapp/clients)
-[INFO ] 2019-05-03T16:54:40,881 [main] Starter - No active profile set, falling back to default profiles: default
-[INFO ] 2019-05-03T16:54:41,026 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Fri May 03 11:54:41 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:54:45,411 [main] TomcatWebServer - Tomcat initialized with port(s): 10050 (http)
-[INFO ] 2019-05-03T16:54:45,451 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:54:45,478 [main] StandardService - Starting service [Tomcat]
-[INFO ] 2019-05-03T16:54:45,482 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
-[INFO ] 2019-05-03T16:54:45,504 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lauragongas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-[INFO ] 2019-05-03T16:54:45,730 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2019-05-03T16:54:45,737 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 4720 ms
-[INFO ] 2019-05-03T16:54:46,045 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-[INFO ] 2019-05-03T16:54:46,055 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO ] 2019-05-03T16:54:46,056 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO ] 2019-05-03T16:54:46,057 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO ] 2019-05-03T16:54:46,057 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-[INFO ] 2019-05-03T16:54:50,066 [main] RPCClient - Startup took 3511 msec
-[INFO ] 2019-05-03T16:54:50,319 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:54:50,819 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Fri May 03 11:54:41 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T16:54:51,041 [main] RequestMappingHandlerMapping - Mapped "{[/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.addresses()
-[INFO ] 2019-05-03T16:54:51,044 [main] RequestMappingHandlerMapping - Mapped "{[/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.states()
-[INFO ] 2019-05-03T16:54:51,047 [main] RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.issue()
-[INFO ] 2019-05-03T16:54:51,049 [main] RequestMappingHandlerMapping - Mapped "{[/templateendpoint],methods=[GET],produces=[text/plain]}" onto private java.lang.String com.template.webserver.Controller.templateendpoint()
-[INFO ] 2019-05-03T16:54:51,055 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO ] 2019-05-03T16:54:51,056 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO ] 2019-05-03T16:54:51,117 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:54:51,117 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO ] 2019-05-03T16:54:51,286 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-[INFO ] 2019-05-03T16:54:51,722 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-[INFO ] 2019-05-03T16:54:51,761 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10050"]
-[INFO ] 2019-05-03T16:54:51,818 [main] NioSelectorPool - Using a shared selector for servlet write/read
-[INFO ] 2019-05-03T16:54:51,856 [main] TomcatWebServer - Tomcat started on port(s): 10050 (http) with context path ''
-[INFO ] 2019-05-03T16:54:51,864 [main] Starter - Started Starter in 14.416 seconds (JVM running for 17.113)
-[INFO ] 2019-05-03T16:54:59,490 [http-nio-10050-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-[INFO ] 2019-05-03T16:54:59,494 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-[INFO ] 2019-05-03T16:54:59,538 [http-nio-10050-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
-[WARN ] 2019-05-03T18:11:12,750 [Thread-4 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Terminating observables.
-[INFO ] 2019-05-03T18:11:13,336 [Thread-4 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - RPC server available.
-[WARN ] 2019-05-03T19:26:48,615 [Thread-6 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - Terminating observables.
-[INFO ] 2019-05-03T19:26:49,120 [Thread-6 (ActiveMQ-client-global-threads)] RPCClientProxyHandler - RPC server available.
-[INFO ] 2019-05-03T19:29:21,512 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffab045: startup date [Fri May 03 11:54:41 COT 2019]; root of context hierarchy
-[INFO ] 2019-05-03T19:29:21,988 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
-[WARN ] 2019-05-03T19:30:49,107 [Thread-10 (ActiveMQ-client-global-threads)] client - AMQ212037: Connection failure has been detected: AMQ119011: Did not receive data from server for org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnection@515ab961[ID=29fae598, local= /127.0.0.1:57620, remote=localhost/127.0.0.1:10006] [code=CONNECTION_TIMEDOUT]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_202]
+[WARN ] 2019-05-06T16:46:25,878 [http-nio-10050-exec-6] DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.template.webserver.Controller.issue(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+[INFO ] 2019-05-06T16:50:57,106 [Thread-4] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f9d87b: startup date [Mon May 06 11:40:57 COT 2019]; root of context hierarchy
+[INFO ] 2019-05-06T16:50:57,145 [Thread-4] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

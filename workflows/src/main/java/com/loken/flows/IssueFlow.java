@@ -9,6 +9,7 @@ import net.corda.core.utilities.OpaqueBytes;
 import net.corda.finance.flows.AbstractCashFlow;
 import net.corda.finance.flows.CashIssueAndPaymentFlow;
 import net.corda.finance.flows.CashIssueFlow;
+import net.corda.finance.flows.CashPaymentFlow;
 
 import java.util.Collections;
 import java.util.Currency;
@@ -18,12 +19,12 @@ import java.util.Currency;
 public class IssueFlow extends FlowLogic<AbstractCashFlow.Result> {
 
     private Amount<Currency> amount;
-    //private Party recipient;
+    private Party recipient;
 
 
-    public IssueFlow(Amount<Currency> amount) {
+    public IssueFlow(Amount<Currency> amount, Party recipient) {
         this.amount = amount;
-        //this.recipient = recipient;
+        this.recipient = recipient;
     }
 
     @Override
@@ -37,9 +38,11 @@ public class IssueFlow extends FlowLogic<AbstractCashFlow.Result> {
 
         AbstractCashFlow.Result result = subFlow(new CashIssueFlow(amount, issueRef, notary));
 
+        AbstractCashFlow.Result result2 = subFlow(new CashPaymentFlow(amount, recipient, false, notary));
+
         //AbstractCashFlow.Result result = subFlow(new CashIssueAndPaymentFlow(amount, issueRef, recipient, anonymous, notary));
 
-        return result;
+        return result2;
 
         //SignedTransaction stx = result.getStx();
 

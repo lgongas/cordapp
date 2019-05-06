@@ -21,7 +21,6 @@ import java.util.Currency;
 public class TransferFlow extends FlowLogic<AbstractCashFlow.Result> {
 
     public Party recipient;
-    //public Amount amount;
     public Amount<Currency> amount;
 
     public TransferFlow(Party recipient, Amount<Currency> amount) {
