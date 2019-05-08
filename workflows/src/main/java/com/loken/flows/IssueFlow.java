@@ -33,16 +33,16 @@ public class IssueFlow extends FlowLogic<AbstractCashFlow.Result> {
         Party notary = getServiceHub().getNetworkMapCache().getNotaryIdentities().get(0);
 
         OpaqueBytes issueRef = OpaqueBytes.of((byte) 0);
-        Boolean anonymous = false;
 
 
-        AbstractCashFlow.Result result = subFlow(new CashIssueFlow(amount, issueRef, notary));
+        //AbstractCashFlow.Result result = subFlow(new CashIssueFlow(amount, issueRef, notary));
 
-        AbstractCashFlow.Result result2 = subFlow(new CashPaymentFlow(amount, recipient, false, notary));
+        //AbstractCashFlow.Result result2 = subFlow(new CashPaymentFlow(amount, recipient, false, notary));
 
-        //AbstractCashFlow.Result result = subFlow(new CashIssueAndPaymentFlow(amount, issueRef, recipient, anonymous, notary));
 
-        return result2;
+        AbstractCashFlow.Result result = subFlow(new CashIssueAndPaymentFlow(amount, issueRef, recipient, false, notary));
+
+        return result;
 
         //SignedTransaction stx = result.getStx();
 

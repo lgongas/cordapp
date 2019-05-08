@@ -1,15 +1,15 @@
 package com.loken.flows;
 
 import net.corda.core.contracts.Amount;
+import net.corda.core.contracts.Issued;
 import net.corda.core.flows.FlowException;
 import net.corda.core.flows.FlowLogic;
 import net.corda.core.flows.InitiatingFlow;
 import net.corda.core.flows.StartableByRPC;
-import net.corda.core.identity.Party;
 import net.corda.core.utilities.OpaqueBytes;
 import net.corda.finance.flows.AbstractCashFlow;
 import net.corda.finance.flows.CashExitFlow;
-import net.corda.finance.flows.CashIssueAndPaymentFlow;
+
 
 import java.util.Currency;
 
@@ -25,10 +25,9 @@ public class ExitFlow extends FlowLogic<AbstractCashFlow.Result> {
 
     @Override
     public AbstractCashFlow.Result call() throws FlowException {
-        // Choose transaction's notary.
-        Party notary = getServiceHub().getNetworkMapCache().getNotaryIdentities().get(0);
 
         OpaqueBytes issueRef = OpaqueBytes.of((byte) 0);
+
 
         AbstractCashFlow.Result result = subFlow(new CashExitFlow(amount,issueRef));
 

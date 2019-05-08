@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import com.loken.flows.*;
 import java.util.Currency;
 import java.util.Map;
-import java.util.Set;
 
 
 /**
@@ -44,17 +43,25 @@ public class Controller {
          return proxy.vaultQuery(Cash.State.class).toString();
     }
 
-    @RequestMapping(value = "/issue", method = RequestMethod.POST)
+
+    @RequestMapping(value = "/cashin", method = RequestMethod.POST, headers = "Accept=application/json")
     @ResponseStatus(HttpStatus.OK)
-    public String issue(@RequestBody Map<String, Object> json_issue) throws Exception {
+    public String cashin(@RequestBody Map<String, Object> json_issue) throws Exception {
         JSONObject jsonObject = new JSONObject(json_issue);
         String value = jsonObject.get("amount") + " COP";
         Amount<Currency> amount = Amount.parseCurrency(value);
-        proxy.startFlowDynamic(IssueFlow.class,amount);
+
+        String user = "CO" + jsonObject.get("user");
+        Party recipient = proxy.partiesFromName(user, true).toArray(new Party[0])[0];
+
+        proxy.startFlowDynamic(IssueFlow.class,amount, recipient);
         return "200";
     }
 
-    @RequestMapping(value = "/transfer", method = RequestMethod.POST)
+
+
+
+    @RequestMapping(value = "/transfer", method = RequestMethod.POST, headers = "Accept=application/json")
     @ResponseStatus(HttpStatus.OK)
     public String transfer(@RequestBody Map<String, Object> json_issue) throws Exception {
         JSONObject jsonObject = new JSONObject(json_issue);
@@ -67,4 +74,18 @@ public class Controller {
         proxy.startFlowDynamic(TransferFlow.class,recipient,amount);
         return "200";
     }
+
+    @RequestMapping(value = "/cashout", method = RequestMethod.POST, headers = "Accept=application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public String cashout(@RequestBody Map<String, Object> json_issue) throws Exception {
+        JSONObject jsonObject = new JSONObject(json_issue);
+
+        String value = jsonObject.get("amount") + " COP";
+        Amount<Currency> amount = Amount.parseCurrency(value);
+
+        proxy.startFlowDynamic(ExitFlow.class, amount);
+        return "200";
+    }
+
+
 }
