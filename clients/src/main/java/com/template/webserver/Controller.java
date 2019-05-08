@@ -8,8 +8,12 @@ import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.loken.flows.*;
+import org.springframework.web.client.RestTemplate;
+
+import java.net.URI;
 import java.util.Currency;
 import java.util.Map;
 
@@ -78,12 +82,32 @@ public class Controller {
     @RequestMapping(value = "/cashout", method = RequestMethod.POST, headers = "Accept=application/json")
     @ResponseStatus(HttpStatus.OK)
     public String cashout(@RequestBody Map<String, Object> json_issue) throws Exception {
+
+        JSONObject jsonObject = new JSONObject(json_issue);
+
+        String value = jsonObject.get("amount") + " COP";
+        Amount<Currency> amount = Amount.parseCurrency(value);
+        Party recipient = proxy.partiesFromName("Banco", true).toArray(new Party[0])[0];
+
+        proxy.startFlowDynamic(TransferFlow.class,recipient,amount);
+
+        URI uri = new URI("http://localhost:10050/exit");
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> result = restTemplate.postForEntity(uri, jsonObject, String.class);
+
+        return result.toString();
+    }
+
+    @RequestMapping(value = "/exit", method = RequestMethod.POST, headers = "Accept=application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public String exit(@RequestBody Map<String, Object> json_issue) throws Exception {
         JSONObject jsonObject = new JSONObject(json_issue);
 
         String value = jsonObject.get("amount") + " COP";
         Amount<Currency> amount = Amount.parseCurrency(value);
 
-        proxy.startFlowDynamic(ExitFlow.class, amount);
+        proxy.startFlowDynamic(ExitFlow.class,amount);
+
         return "200";
     }
 
